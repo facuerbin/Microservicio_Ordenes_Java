@@ -1,18 +1,12 @@
-### Si queres sabes mas sobre mi:
-[Nestor Marsollier](https://github.com/nmarsollier/profile)
-
 # Order Service en Java
 
-Order Service en Java reemplaza la version realizada en Python del proyecto  [ecommerce](https://github.com/nmarsollier/ecommerce).
+Order Service en Java es un microservicio encargado de gestionar las ordenes del sistema de ecomerce. Fue desarrollado
+por [Nestor Marsollier](https://github.com/nmarsollier/profile) para la cátedra de "Arquitectura de Microservicios". 
+Este repositorio contiene una versión modificada del proyecto que añadio un endpoint que permita cancelar las ordenes.
+Esta modificación fue realizada para permitir una mejor integración con el [Microservicio de Reclamos](https://github.com/facuerbin/Microservicio_Reclamos_NestJS) que se realizó para
+la misma cátedra. 
 
-El motivo de este proyecto es para poder modelar de otra forma el mismo proyecto para poder mostrar ejemplos académicos.
-
-Es un proyecto que implementa el patron Event Sourcing y Command and Query Responsibility Separation para almacenar los distintos eventos que se producen en las ordenes. Maneja algunas proyecciones como ejemplos.
-
-[Documentación de API](./README-API.md)
-
-La documentación de las api también se pueden consultar desde el home del microservicio
-que una vez levantado el servidor se puede navegar en [localhost:3004](http://localhost:3004/)
+La documentación del repositorio original la pueden encontrar [aquí](https://github.com/nmarsollier/ecommerce_order_java)
 
 ## Dependencias
 
