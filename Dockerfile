@@ -1,8 +1,8 @@
 # Docker para desarrollo
 FROM gradle:6.9.1-jdk8
 
-ENV RABBIT_URL amqp://ec-rabbit
-ENV MONGO_URL http://ec-mongo:27017
+ENV RABBIT_URL host.docker.internal
+ENV MONGO_URL host.docker.internal
 ENV AUTH_SERVICE_URL http://host.docker.internal:3000
 
 WORKDIR /app
