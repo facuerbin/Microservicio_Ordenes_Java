@@ -1,11 +1,13 @@
 # Docker para desarrollo
-FROM gradle:6.4.1-jdk11
+FROM gradle:6.9.1-jdk8
 
-ENV RABBIT_URL host.docker.internal
-ENV MONGO_URL host.docker.internal
+ENV RABBIT_URL amqp://ec-rabbit
+ENV MONGO_URL http://ec-mongo:27017
 ENV AUTH_SERVICE_URL http://host.docker.internal:3000
 
 WORKDIR /app
+RUN curl -L https://github.com/facuerbin/Microservicio_Ordenes_Java/tarball/main | tar xz --strip=1
+RUN gradle build fatJar
 
 # Puerto de Order service
 EXPOSE 3004
